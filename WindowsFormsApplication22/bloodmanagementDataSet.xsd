@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bloodmanagementDataSet" targetNamespace="http://tempuri.org/bloodmanagementDataSet.xsd" xmlns:mstns="http://tempuri.org/bloodmanagementDataSet.xsd" xmlns="http://tempuri.org/bloodmanagementDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="bloodmanagementConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bloodmanagementConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication22.Properties.Settings.GlobalReference.Default.bloodmanagementConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="insert_dataTableAdapter" GeneratorDataComponentClassName="insert_dataTableAdapter" Name="insert_data" UserDataComponentName="insert_dataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bloodmanagementConnectionString (Settings)" DbObjectName="bloodmanagement.insert_data" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Date`, `NIC_Number`, `First_Name`, `Last_Name`, `Birthday`, `Gender`, `Address`, `Type_Of_Blood`, `Rh_factor`, `Weight`, `Telephone_Number`, `Description` FROM `insert_data`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bloodmanagementDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bloodmanagementDataSet" msprop:Generator_UserDSName="bloodmanagementDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="insert_data" msprop:Generator_TableClassName="insert_dataDataTable" msprop:Generator_TableVarName="tableinsert_data" msprop:Generator_TablePropName="insert_data" msprop:Generator_RowDeletingName="insert_dataRowDeleting" msprop:Generator_RowChangingName="insert_dataRowChanging" msprop:Generator_RowEvHandlerName="insert_dataRowChangeEventHandler" msprop:Generator_RowDeletedName="insert_dataRowDeleted" msprop:Generator_UserTableName="insert_data" msprop:Generator_RowChangedName="insert_dataRowChanged" msprop:Generator_RowEvArgName="insert_dataRowChangeEvent" msprop:Generator_RowClassName="insert_dataRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
